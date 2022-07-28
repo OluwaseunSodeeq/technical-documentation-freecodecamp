@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Code:wght@400;500;600;700&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+  :root {
+    --first-background-color:#FFFFFF;
+    --second-background-color:aliceblue;
+    --text-color-one:rgb(1, 1, 10);
+    --text-color:rgb(62, 4, 88);
+    --text-color-three:#FFFFFF;
+    --bold-text:#250225;
+    --bottom-line:#f80404;
+    
+  }
+  #navbar {
+    position: fixed;
+    min-width: 300px;
+    top: 0px;
+    /* right: 0px; */
+    left: 0px;
+    width: 300px;
+    height: 98%;
+    border-color: var(--bold-text);
+    border-radius: 10px;
+    border: 2px solid var(--bottom-line);
+    background-color: #000;
+    color:var(--text-color-three);
+    margin-top: 10px;
+    margin-right: 5px;
+  }
+  
+  
+  #navbar ul {
+    height: 90%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    list-style-type: circle;
+  }
+  
+  #navbar li {
+    
+    border-top: 1px solid var(--bottom-line);
+    text-align: center;
+    position: relative;
+    width: 100%;
+  }
+  
+  #navbar a {
+    line-height: 2.5rem;
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    color:var(--text-color-three);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  #navbar a:hover{
+    background-color: var(--bottom-line);
+     color: #000;
+  }
+  #navbar header {
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--text-color-three);
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  #main-doc {
+    position: absolute;
+    /* margin-right: 300px; */
+    margin-left: 310px;
+    padding: 20px;
+    line-height: 1.2rem;
+    min-width: 300px;
+    
+  }
+  .one::first-letter{
+    float: left;
+    font-size: 2.5rem;
+    color: var(--bottom-line);
+    margin-left: 10px;
+  }
+  .main-section,
+  .footer-main-section{
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .main-section header {
+    font-family: "Fira Code",sans-serif;
+    color: var(--text-color);
+    font-weight: 700;
+    font-size: 22px;
+    margin: 10px;
+    text-align: center;
+
+  }
+  #introduction {
+    margin-top: 0px;
+  }
+  article h3 {
+    color: var(--text-color);
+    margin-top: 20px;
+  }
+  p {
+    margin-top: 10px;
+  }
+  h5 {
+    color: var(--text-color);
+    font-size: 18px;
+  }
+  #main-doc header {
+    text-align: left;
+    margin: 0px;
+  }
+  b {
+    font-family: "Fira Code",sans-serif;
+    color: var(--bold-text);
+    font-size: 17px;
+    font-weight: 500;
+
+  }
+   span {
+
+   }
+   code {
+    position: relative;
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    background-color:var(--second-background-color);
+    padding: 5px 0px 5px 50px;
+    border-radius: 10px;
+    height: auto;
+    margin-top: 10px;
+    line-height: 1.3rem;
+
+   }
+   .main-section a{
+    text-decoration: none;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: rgb(2, 2, 88);
+   }
+   footer ul {
+    list-style-type: square;
+    /* list-style: none; */
+
+   }
+   footer ul li a{
+    text-decoration: none;
+    color: var(--text-color-one);
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 10px;
+   }
+   footer h3 {
+    display: none;
+   }
+   .last-p {
+    font-size: 22px;
+    color: var(--bold-text);
+    margin-bottom: 10px;
+
+   }
+   
+  
+  
+  
+  @media (max-width:768px){
+    body {
+      width: 100%;
+      margin: 0 auto;
+      
+    }
+    #navbar{
+      width: 90%;
+      position:absolute;
+      top: 0px;
+      z-index: 1;
+      width: 100%;
+      height: 330px;
+      /* border: none; */
+      border-radius: 0px;
+     
+      
+    } 
+    #navbar ul {
+      height: 270px;
+    }
+    
+    #main-doc{
+      position:relative;
+      width: 90%;
+      margin-right:0px;
+      margin-left: 20px;
+      margin-top: 330px ;
+     
+
+    } 
+    #navbar a:hover{
+    background-color: var(--bottom-line);
+    }
+    
+    .footer,
+    .main-section #ref-headings{
+      text-align: center;
+      
+
+    }
+    .ref{
+      text-align: center;
+      margin-top: 10px;
+    }
+    footer ul {
+      list-style: none;
+    }
+   
+  }
+  

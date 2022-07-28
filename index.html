@@ -1,0 +1,361 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HTML DOCUMENTATION</title> 
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+
+<body>
+    <nav id="navbar">
+        <header>HTML Documentation</header>
+        <ul>
+          <li>
+            <a class=" intro nav-link" href="#Introduction">Introduction</a>
+          </li>
+          <li>
+            <a class="nav-link " href="#HTML5_boilerplate">HTML5 boilerplate</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#Html_Declaration">Html Declaration</a>
+          </li>
+         
+          <li>
+            <a class="nav-link" href="#Tags_and_Elements">Tags and Elements</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#Attributes">Attributes</a>
+          </li>
+          <li><a class="nav-link" href="#Headings">Headings</a></li>
+          <li>
+            <a class="nav-link" href="#Forms">Forms</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#Lists">Lists</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#Table">Table</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#Anchor_Element">Anchor Element</a>
+          </li>
+          <li><a class="nav-link" href="#Paragraph">Paragraph</a></li>
+          <li>
+            <a class="nav-link" href="#Div_and_Section">Div and Section</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#References">References</a>
+          </li>
+         
+        </ul>
+      </nav>
+      <main id="main-doc">
+        <section class="main-section" id="Introduction">
+          <header>Introduction</header>
+          <article>
+            <h3>A Brief History of HTML</h3>
+            <p class="one">The first version of HTML was written by Tim Berners-Lee in 1993. Since then, there have been many different versions of HTML. The most widely used version throughout the 2000's was HTML 4.01, which became an official standard in December 1999.</p>
+            <p>Another version,<span> XHTML</span>, was a rewrite of HTML as an XML language. XML is a standard markup language that is used to create other markup languages. Hundreds of XML languages are in use today, including GML (Geography Markup Language), MathML, MusicML, and RSS (Really Simple Syndication). Since each of these languages was written in a common language (XML), their content can easily be shared across applications. This makes XML potentially very powerful, and it's no surprise that the W3C would create an XML version of HTML (again, called XHTML). XHTML became an official standard in 2000, and was updated in 2002. XHTML is very similar to HTML, but has stricter rules. Strict rules are necessary for all XML languages, because without it, interoperability between applications would be impossible.</p>
+            <p>Most pages on the Web today were built using either HTML 4.01 or XHTML 1.0. However, in recent years, the W3C (in collaboration with another organization, the WHATWG), has been working on a brand new version of HTML, HTML5.</p>
+            <p><span>HTML5</span> HTML5 is a markup language used for structuring and presenting content on the World Wide Web. It is the fifth and final[3] major HTML version that is a World Wide Web Consortium (W3C) recommendation. The current specification is known as the HTML Living Standard. It is maintained by the Web Hypertext Application Technology Working Group (WHATWG), a consortium of the major browser vendors (Apple, Google, Mozilla, and Microsoft).</p>
+            <p>HTML5 was first released in a public-facing form on 22 January 2008, with a major update and "W3C Recommendation" status in October 2014.[4][5] Its goals were to improve the language with support for the latest multimedia and other new features; to keep the language both easily readable by humans and consistently understood by computers and devices such as web browsers, parsers, etc., without XHTML's rigidity; and to remain backward-compatible with older software. HTML5 is intended to subsume not only HTML 4 but also XHTML 1 and DOM Level 2 HTML.[6]</p>
+            <p>Many new syntactic features are included. To natively include and handle multimedia and graphical content, the new &lt;video&gt;, &lt;audio&gt; and &lt;canvas&gt;. </p>
+          </article>
+        </section>
+        <section class="main-section" id="HTML5_boilerplate">
+            <header>HTML5 boilerplate</header>
+            <article>
+              <p>boilerplate code or just boilerplate are sections of code that are repeated in multiple places with little to no variation.</p>
+              <p>A boilerplate in HTML is a template you will add at the start of your project. You should add this boilerplate to all of your HTML pages.</p>
+              <p>HTML 5 boilerplate consists the following tags:</p>
+    
+              <ul>
+
+                <li>Doctype Declaration</li>
+                <li>Html Tag</li>
+                <li>Head tag</li>
+                <li>Body tag</li>
+
+              </ul>
+              
+              <code class="example">
+                &lt;!DOCTYPE html&gt;
+                &lt;html lang="en"&gt;
+                &lt;head&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
+                &lt;title&gt;HTML 5 Boilerplate&lt;/title&gt;
+                &lt;link rel="stylesheet" href="style.css"&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                &lt;script src="index.js"&gt;&lt;/script&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+              </code>
+              
+            </article>
+          </section>
+
+          <section class="main-section" id="Html_Declaration">
+            <header>Html Declaration</header>
+            <article>
+             <p>The first line in your HTML code should be the doctype declaration. A doctype tells the browser what version of HTML the page is written in.</p>
+             <p>in order word, This element is the doctype declaration of the HTML file tells the browser to render the HTML codes as HTML5 (as opposed to some other version of HTML). This is important, because without this declaration, HTML5 elements may not be rendered correctly.</p>
+             <code class="example">&lt;!DOCTYPE html&gt;</code>
+             <P> <b>NB:</b> If you forget to include this line of code in your file, then some of the HTML 5 tags like &lt;article&gt;, &lt;footer&gt;, and &lt;header&gt;  may not be supported by the browser.</p>
+            </article>
+          </section> 
+
+          <section class="main-section" id="Tags_and_Elements">
+            <header>Tags and Elements</header>
+            <article>
+                <p>Informally, HTML elements are sometimes referred to as "tags" (an example of synecdoche), though many prefer the term tag strictly in reference to the markup delimiting the start and end of an element.</p>
+                <p>help web browsers to convert HTML documents into web pages. Tags are always enclosed in angle brackets <>. Tags are case insensitive</p>
+                <p>To clearify it, a tag is just a named kind of element, because an elment is more than a tag. An element is made up of tag, content and sometimes attribute(s)</p>
+                <p>There are two types of tags and two types of Elements,these are they repectively:</p>
+                 <h5>html Tags</h5>
+                 <ol>
+                    <li> 
+                         <p> <b>Self-closing Tags:</b> are the type of HTML tags that need not to be closed manually by its closing tag, which means there is no saperate closing tag for it as &lt;/tag&gt;.</p> 
+                         <p></p>A few examples of self closing tags are &lt;img/&gt;, &lt;input/&gt;, &lt;br/&gt;, &lt;hr/&gt;, etc.</p>
+                         <p>Self closing tags are also alternatively known as void tags, empty tags, singletons tags, etc. i.e these tags do not have contents and also can not have any child.</p></li>
+                         <code class="example block"> 
+                            &lt;hr&gt;
+                            &lt;input type="text"&gt;</code>
+                    </li>
+                    <li>
+                        <P><b>Opening and Closing Tags:</b>The closing tag is made up of the element’s symbol preceded by a forward slash and wrapped in angle brackets, like this:</P>
+                        <code> &lt;p&gt; This is an example of an opening and closing tags &lt;/p&gt;</code>
+                    </li>
+
+                  </ol>
+                  <h5>html Elements</h5>
+                  <ol>
+                    <li>
+                      <p><b>Inline Elements:</b>An inline element does not start on a new line.</p>
+                      <p>An inline element only takes up as much width as necessary</p>
+                      <p><b>Examples are:</b>span,image,br,hr,b,input etc...</p>
+                    </li>
+                    <li>
+                      <p> <b>block Elements:</b> A block-level element always starts on a new line, and the browsers automatically add some space (a margin) before and after the element.</p>
+                      <p>A block-level element always takes up the full width available (stretches out to the left and right as far as it can).</p>
+                      <p> <b>Examples are:</b> paragraph, div, section,ul,li,form etc... </p>
+                    </li>
+
+                </ol>
+              
+            </article>
+          </section>
+
+          <section class="main-section" id="Headings">
+            <header>Headings</header>
+            <article>
+                <p>HTML headings are titles or subtitles that you want to display on a webpage.</p>
+                <p>The &lt;h1&gt; to &lt;h6&gt; HTML elements represent six levels of section headings. &lt;h1&gt; is the highest section level and &lt;h6&gt; is the lowest.</p>
+                <p>Most essentially,headings are crucial examples of opening and closing tags and Block elements</p>
+                <code class="example">
+
+                    &lt;h1&gt;Heading level 1&lt;/h1&gt;
+                    &lt;h2&gt;Heading level 2&lt;/h2&gt;
+                    &lt;h2&gt;Heading level 3&lt;/h3&gt;
+                    &lt;h4&gt;Heading level 4&lt;/h4&gt;
+                    &lt;h5&gt;Heading level 5&lt;/h5&gt;
+                    &lt;h6&gt;Heading level 6&lt;/h6&gt;
+                    
+                </code>
+            </article>
+          </section>
+
+          <section class="main-section" id="Attributes">
+            <header>Attributes</header>
+            <p> <b>An attribute</b> is used to define the characteristics of an HTML element and is placed inside the element's opening tag. All attributes are made up of two parts - a name and a value</p>
+             <ul>
+                <li>The name is the property you want to set. For example, the paragraph &lt;p&gt; element in the example carries an attribute whose name is align, which you can use to indicate the alignment of paragraph on the page.</li>
+                <li>The value is what you want the value of the property to be set and always put within quotations. The below example shows three possible values of align attribute: left, center and right.</li>
+             </ul>
+             <code class="example">
+                &lt;p <b>width="500"</b>&gt; the width and its value in the opening tag is  an  example of an attribute &lt;/p&gt;
+             </code>
+             <p>In short, Attributes provide additional information about elements</p>
+          </section>
+
+          <section class="main-section" id="Forms">
+            <header>Forms</header>
+            <article>
+                <p>An HTML form is used to collect user input. The user input is most often sent to a server for processing.</p>
+                <p>The HTML &lt;form&gt; element is used to create an HTML form for user input</p>
+                <p>The &lt;form&gt;  element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc...</p>
+                    <ul>
+                        <li>
+                            <p><b>Text Fields:</b> defines a single-line input field for text input.</p>
+                            <code class="example"> &lt;input type="text"&gt;</code>
+                        </li>
+                        <li>
+                            <p><b>Radio Buttons:</b>defines a radio button. Radio buttons let a user select ONE of a limited number of choices.</p>
+                            <code class="example"><code class="example"> &lt;input type="radio"&gt;</code></code>
+                        </li>
+                        <li>
+                            <p><b>Checkbox:</b>defines a checkbox. Checkboxes let a user select ZERO or MORE options of a limited number of choices.</p>
+                            <code class="example"><code class="example"> &lt;input type="checkbox"&gt;</code></code>
+                        </li>
+                        <li>
+                            <p><b>Button:</b> defines a button for clicking/submitting the form data to a form-handler.></p>
+                            <code class="example"><code class="example"> &lt;input type="buttons"&gt;</code></code>
+                        </li>
+                        <li>
+                            <p><b>Submit:</b>defines a button for submitting the form data to a form-handler.</p>
+                            <code class="example"><code class="example"> &lt;input type="submit"&gt;</code></code>
+                        </li>
+                        <li>
+                            <p><b>Label:</b> The &lt;label&gt; tag defines a label for many form elements.</p>
+                            <p>The &lt;label&gt; element is useful for screen-reader users, because the screen-reader will read out loud the label when the user focus on the input element.</p>
+                            <p>The &lt;label&gt; element also help users who have difficulty clicking on very small regions (such as radio buttons or checkboxes) - because when the user clicks the text within the &lt;label&gt; element, it toggles the radio button/checkbox.</p>
+                            <code class="example"> &lt;label&gt; Name &lt;/label&gt;</code>
+                        </li>
+                    </ul>
+            </article>
+          </section>
+
+          <section class="main-section" id="Lists">
+            <header>Lists</header>
+            <article>
+                <p>HTML lists allow web developers to group a set of related items in lists.</p>
+                <p>There are two types of list:</p>
+                <ul>
+                    <li>
+                        <p> <b>Ordered-list:</b> An ordered list starts with the &lt;ol&gt; tag. Each list item starts with the  &lt;li&gt; tag.</p>
+                        <p>The list items will be marked with numbers,alphabets,Roman numeral etc..:</p>
+                        <code class="example">
+                            &lt;ol&gt;
+                                &lt;li&gt; it may be alphabet &lt;/li&gt;
+                                &lt;li&gt; it may be number &lt;/li&gt;
+                            &lt;/ol&gt;
+                        </code>
+                    </li>
+                    <li>
+                    <p> <b>Unordered-list:</b> An unordered list starts with the &lt;ul&gt; tag. Each list item starts with the &lt;li&gt; tag.</p>
+                    <p>The list items will be marked with bullets (small black circles) by default:</p>
+                    <code class="example">
+                        &lt;ul&gt;
+                            &lt;li&gt; it may be square &lt;/li&gt;
+                            &lt;li&gt; it may be circle &lt;/li&gt;
+                            &lt;li&gt; it may be disc &lt;/li&gt;
+                        &lt;/ul&gt;
+                    </code>
+                   </li>
+                </ul>
+             
+            </article>
+          </section>
+
+          <section class="main-section" id="Table">
+            <header>Table</header>
+            <article>
+                <p> <b>Table:</b> The  &lt;table&gt; HTML element represents tabular data — that is, information presented in a two-dimensional table comprised of rows and columns of cells containing data.</p>
+                <p> <b>table</b>  in HTML consists of table cells inside rows and columns</p>
+                <p> <b>tr</b> stands for table row. Each table row starts with a  &lt;tr&gt; and end with a  &lt;tr&gt; tag.</p>
+                <p> <b>th</b> stands for table headers .Sometimes you want your cells to be headers, in those cases use the  &lt;th&gt; tag instead of the  &lt;th&gt; tag:</p>
+                <p> <b>td</b> Each table cell is defined by these tags &lt;td&gt; table cell &lt;/td&gt; tag. Everything between  &lt;td&gt; and &lt;/td&gt; are the content of the table cell. </p>
+                <code class="example">
+                    &lt;table&gt;
+                       &lt;tr&gt;
+                           &lt;th&gt; table header&lt;/th&gt;
+                           &lt;th&gt; table header&lt;/th&gt;
+                       &lt;/tr&gt;
+
+                       &lt;tr&gt;
+                            &lt;td&gt; table cell &lt;/td&gt;
+                            &lt;td&gt; table cell &lt;/td&gt;
+                       &lt;/tr&gt;
+                    &lt;/table&gt;
+                </code>
+
+             
+              </p>
+            </article>
+          </section>
+
+          <section class="main-section" id="Anchor_Element">
+            <header>Anchor Element</header>
+            <article>
+                <p> <b>Anchor Element:</b> The &lt;a&gt; HTML element (or anchor element), with its href attribute, creates a hyperlink to web pages, files, email addresses, locations in the same page, or anything else a URL can address.</p>
+                <p>Content within each <a> should indicate the link's destination. If the href attribute is present, pressing the enter key while focused on the &lt;a&gt; element will activate it.</p>
+                <p>An anchor (or link) is an example of an inline element and it is also an example ofopening and closing tags</p>
+                  <code class="element"> &lt;a&gt;This is an example of an anchor element&lt;/a&gt;</code>
+             
+              </p>
+            </article>
+          </section>
+
+          <section class="main-section" id="Paragraph">
+            <header>Paragraph</header>
+            <article>
+                <p> <b>Paragraph:</b> The lt;p&gt; HTML element represents a paragraph. Paragraphs are usually represented in visual media as blocks of text separated from adjacent blocks by blank lines and/or first-line indentation, but HTML paragraphs can be any structural grouping of related content, such as images or form fields. </p>
+                <p>Paragraphs are block-level elements, and notably will automatically close if another block-level element is parsed before the closing &lt;/p&gt;
+                <code class="example"> &lt;p&gt;This is an example of a paragraph&lt;/p&gt;</code>
+            </article>
+          </section>
+
+          <section class="main-section" id="Div_and_Section">
+            <header>Div and Section</header>
+            <article>
+
+              <p> <b>A Div:</b> The HTMLDivElement interface provides special properties (beyond the regular HTMLElement interface it also has available to it by inheritance) for manipulating &lt;div&gt; elements.  </p>
+              <p>The &lt;div&gt; tag defines a division or a section in an HTML document.</p>
+              <code class="example"> &lt;div&gt;This is an example of a div&lt;/div&gt;</code>
+
+              <p>The &lt;section&gt; tag defines a section in a document.</p>
+              <p> <b>A Section:</b> The <section> HTML element represents a generic standalone section of a document, which doesn't have a more specific semantic…  </p>
+              <code class="example"> &lt;section&gt;This is an example of a section&lt;/section&gt;</code>
+             
+               
+            </article>
+          </section>
+          <section class="main-section" id="References">
+            <header>References</header>
+            
+          </section>
+          <footer class="footer-main-section" >
+            <h3>References</h3>
+           
+            <div>
+              <p class="last-p"> All the documentations in this page is taken from these platforms below:</p>
+            <ul class="ref">
+              <!-- <li>
+                All the documentation in this page is taken from
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
+                  target="_blank"
+                  >MDN</a
+                >
+              </li> -->
+                <li><a href="https://www.washington.edu/accesscomputing/webd2/student/unit1/module3/html_history.html#:~:text=The%20first%20version%20of%20HTML,HTML%20as%20an%20XML%20language." target="_blank">History of HTML By University of Washington</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/HTML5">Wikipedia.org</a></li>
+                <li><a href="https://www.freecodecamp.org/news/html-starter-template-a-basic-html5-boilerplate-for-index-html/" target="_blank">Freecodecamp.org</a></li>
+                <li><a href="https://www.geeksforgeeks.org/"target="_blank">Geeksforgeeks</a></li>
+                <li><a href="https://www.tutorialspoint.com/" target="_blank">Tutorialspoint.com</a></li>
+                <li><a href="https://www.tutorialstonight.com/" target="_blank">Tutorialstonight.com</a></li>
+                <li><a href="https://simpledev.io/" target="_blank">Simpledev</a></li>
+                <li><a href="https://developer.mozilla.org/" target="_blank">MDN</a></li>
+                <li><a href="https://www.w3schools.com/" target="_blank">W3schools</a></li>
+                <li><a href="https://www.linkedin.com/in/oluwaseun-sodeeq-5765a322a/" target="_blank">Sodeeq Oluwaseun</a></li>
+            
+
+            </ul>
+          </div>
+        </footer>
+
+        
+          
+          
+
+          
+          
+    
+
+    
+</body>
+</html>
